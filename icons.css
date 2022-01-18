@@ -1,0 +1,101 @@
+
+.bookmark-section{ 
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+@font-face{
+    font-family: "Montserrat";
+    src:url(FONTS/Montserrat-Bold.ttf);
+    font-weight:700;
+}
+@font-face{
+    font-family: "Montserrat";
+    src:url(FONTS/Montserrat-Light.ttf);
+    font-weight:300;
+}
+
+@font-face{
+    font-family: "Montserrat";
+    src:url(FONTS/Montserrat-SemiBold.ttf);
+    font-weight:600;
+}
+@font-face{
+    font-family: "Montserrat";
+    src:url(FONTS/Montserrat-Regular.ttf);
+    font-weight:400;
+}
+
+.title{
+   font-family: 'Montserrat';
+   font-weight: 700;
+}
+.subtitle{
+    font-family: 'Montserrat';
+    font-weight:300;
+   
+}
+.list-container{
+    list-style: none;
+    width:700px;
+ 
+}
+.list-item{
+    position:relative;
+    border-bottom: 1px solid grey;
+    
+}
+.list-item::before{
+    content: "\e902";
+    font-family: "icomoon";
+    font-weight: 900; 
+    position:absolute;
+    left:-10%;
+    font-size:30px;
+      
+}
+.list-item--green::before{
+    color:green;
+}
+.list-item--orange::before{
+    color:orange;
+}
+.list-item--blueviolet::before{
+    color:blueviolet;
+}
+.quote-element{
+  position: relative;
+  font-family: 'Montserrat';
+  font-weight:600;
+
+}
+.quote-element::before{
+    content: "\e903";
+    font-family: "icomoon";
+    font-weight: 900;
+    position:absolute;
+    left:-5%;
+    font-size:25px; 
+    color:green;
+}
+.comments{
+    
+    color:green;
+    font-family: 'Montserrat';
+    font-weight:400;
+  
+}
+.comments .comments-link{
+    text-decoration: none;
+    color:green;
+}
+.comments-link::after{
+    content:"\e904";
+    font-family:"icomoon";
+    font-weight:800;
+}
+.display-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
